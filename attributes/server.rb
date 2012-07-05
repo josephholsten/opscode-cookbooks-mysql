@@ -65,6 +65,7 @@ when "windows"
   default['mysql']['mysql_bin']               = "#{mysql['bin_dir']}\\mysql"
 
   default['mysql']['conf_dir']                = "#{mysql['basedir']}"
+  default['mysql']['confd_dir']               = "#{mysql['basedir']}"
   default['mysql']['old_passwords']           = 0
   default['mysql']['grants_path']             = "#{mysql['conf_dir']}\\grants.sql"
 when "mac_os_x"

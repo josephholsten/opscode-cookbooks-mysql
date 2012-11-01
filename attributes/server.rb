@@ -55,7 +55,7 @@ when "freebsd"
   set['mysql']['grants_path']                 = "/var/db/mysql/grants.sql"
 when "windows"
   default['mysql']['server']['packages']      = ["MySQL Server 5.5"]
-  default['mysql']['version']                 = '5.5.24'
+  default['mysql']['version']                 = '5.5.28'
   default['mysql']['arch']                    = 'win32'
   default['mysql']['package_file']            = "mysql-#{mysql['version']}-#{mysql['arch']}.msi"
   default['mysql']['url']                     = "http://www.mysql.com/get/Downloads/MySQL-5.5/#{mysql['package_file']}/from/http://cdn.mysql.com/"
